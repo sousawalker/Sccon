@@ -1,0 +1,15 @@
+<div id="header">
+  <mat-toolbar class="toolbar">
+    <img class="logo" src="/assets/logo.svg">
+
+    <div class="right">
+      <button class="menu-button" routerLink="/">Home</button>
+
+      <button [matMenuTriggerFor]="appMenu" class="menu-button">Endereços</button>
+
+      <mat-menu #appMenu="matMenu" class="menu-button">
+        <button mat-menu-item routerLink="/search-address">Buscar Endereços</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+</div>

@@ -1,0 +1,9 @@
+<div id="cep">
+  <app-loader [loader]="loader"></app-loader>
+
+  <h1>Busca de Endereços</h1>
+
+  <app-cep-search (cepOut)="findCep($event);"></app-cep-search>
+  
+  <app-cep-list [history]="history" (loaderOut)="toggleLoader($event);"></app-cep-list>
+</div>

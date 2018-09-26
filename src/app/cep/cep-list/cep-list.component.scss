@@ -1,0 +1,26 @@
+@import '../../app.component';
+
+#cep-list {
+  padding: 50px 0;
+
+  .mat-card {
+    max-height: calc(100vh - 570px);
+    overflow: auto;
+
+    .mat-table {
+      width: 100%;
+
+      .delete {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+          color: $redColor;
+        }
+      }
+    }
+  }
+}

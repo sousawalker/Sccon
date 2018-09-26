@@ -1,0 +1,15 @@
+<div id="cep-search">
+  <mat-card>
+    <form class="example-form">
+      <h3>Digite o cep para pesquisar</h3>
+
+      <mat-form-field>
+        <input matInput placeholder="CEP" maxlength="9" mask="00000-000" (input)="findCep($event.target.value);" [formControl]="cepFormControl">
+
+        <mat-error *ngIf="cepFormControl.hasError('cep') && !cepFormControl.hasError('required')">Escreva um <strong>CEP</strong> válido</mat-error>
+
+        <mat-error *ngIf="cepFormControl.hasError('required')">Preencimento do <strong>CEP</strong> é obrigatório</mat-error>
+      </mat-form-field>
+    </form>
+  </mat-card>
+</div>

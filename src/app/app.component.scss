@@ -1,0 +1,56 @@
+#main {
+  padding: 30px 15px;
+  margin: auto;
+  max-width: 1199px;
+}
+
+$redColor: #670000;
+$lightGrayColor: #D7DBDD;
+$blackColor: #000;
+$whiteColor: #FFF;
+$grayColor: #CCC;
+
+@mixin border-top-left-radius($value) {
+  -webkit-border-top-left-radius: $value;
+  -moz-border-radius-topleft: $value;
+  border-top-left-radius: $value;
+}
+
+@mixin border-top-right-radius($value) {
+  -webkit-border-top-right-radius: $value;
+  -moz-border-radius-topright: $value;
+  border-top-right-radius: $value;
+}
+
+@mixin border-bottom-left-radius($value) {
+  -webkit-border-bottom-left-radius: $value;
+  -moz-border-radius-bottomleft: $value;
+  border-bottom-left-radius: $value;
+}
+
+@mixin border-bottom-right-radius($value) {
+  -webkit-border-bottom-right-radius: $value;
+  -moz-border-radius-bottomright: $value;
+  border-bottom-right-radius: $value;
+}
+
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin translate($left, $top) {
+  transform: translate($left, $top);
+  -webkit-transform: translate($left, $top);
+  -moz-transform: translate($left, $top);
+  -o-transform: translate($left, $top);
+  -ms-transform: translate($left, $top);
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
